@@ -6,7 +6,7 @@
 ## Requirements
 
 - POSIX-compatible terminal / console(Linux,MacOs,BSD)
-- g++ or clang++ 
+- C++ compiler (g++ or clang++) 
 - GNU Make
 
 ## Quick Start
