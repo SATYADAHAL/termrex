@@ -1,5 +1,10 @@
 # \<TERM-REX/\>
+
 `termrex` is a terminal-based endless runner game inspired by the Chrome Dino offline game. Jump or duck to avoid obstacles while running endlessly in your terminal. It works on **POSIX-like terminals**, including **Linux virtual consoles**.
+
+---
+
+<img alt="intro-unicode" src="readme-images/intro-unicode.png" />
 
 ---
 
@@ -62,10 +67,6 @@ Better check for your OS/DE from keyboard settings/google.
  (Kitty, Alacritty, WezTerm, Foot, Ghostty, iTerm2, Rio) handle key repeat automatically, so you don’t need to adjust `--keyrepeat`.
 * Using `--no-obstacle-dino` disables flying obstacles and ducking, and also removes the need for `--keyrepeat`.
 
-
-
-## Screenshots
-<img alt="intro-unicode" src="readme-images/intro-unicode.png" />
 
 ---
 
