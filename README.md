@@ -22,7 +22,17 @@ cd termrex
 make -j release
 ./build/termrex
 ```
+---
 
+## Fedora Installation via COPR
+
+If you are on Fedora, you can install `termrex` directly from my COPR repository:
+
+```sh
+sudo dnf copr enable satya-pr-dahal/termrex
+sudo dnf install termrex
+termrex
+```
 ---
 
 ## Usage
