@@ -10,8 +10,8 @@ TARGET := $(BUILDDIR)/termrex
 OBJS := $(SRCS:%.cpp=$(OBJDIR)/%.o)
 DEPS := $(OBJS:.o=.d)
 
-PREFIX  ?= /usr/local
-BINDIR  ?= $(PREFIX)/bin
+PREFIX  ?= /usr
+BINDIR  ?= $(PREFIX)/games
 DESTDIR ?=
 
 .PHONY: all clean run debug release install uninstall
