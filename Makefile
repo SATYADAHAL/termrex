@@ -3,11 +3,12 @@ CXX ?= c++
 CXXFLAGS ?= -std=c++17 -Wall -Wextra
 CPPFLAGS += -MMD -MP
 
-SRCS := $(wildcard *.cpp)
+SRCDIR := src
+SRCS := $(wildcard $(SRCDIR)/*.cpp)
 OBJDIR := build/obj
 BUILDDIR := build
 TARGET := $(BUILDDIR)/termrex
-OBJS := $(SRCS:%.cpp=$(OBJDIR)/%.o)
+OBJS := $(SRCS:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
 DEPS := $(OBJS:.o=.d)
 
 PREFIX  ?= /usr
@@ -21,7 +22,7 @@ all: $(TARGET)
 $(TARGET): $(OBJS) | $(BUILDDIR)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-$(OBJDIR)/%.o: %.cpp | $(OBJDIR)
+$(OBJDIR)/%.o: $(SRCDIR)/%.cpp | $(OBJDIR)
 	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $< -o $@
 
 $(OBJDIR):
